@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    font-size: 50px;
+    background-color: gray;
+    text-align: center;
+  }
+  header nav a
+  {
+    text-decoration: none;
+    color:black;
+  }
+  
+  .notCurrentPage
+  {
+    opacity: 50%;
+  }
+  .notCurrentPage:hover {
+    opacity : 100%;
+   }
+  main {
+    padding: 50px;
+    text-align: center;
+    align-items: center;
+    
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .project {
+    margin-bottom: 50px;
+  }
+
+  .image {
+
+    height: 800px;
+    width: 1000px;
+    max-width: 50%;
+    border-radius: 30px;
+    height: auto;
+  }
+
+  main p{
+    font-size: 25px;
+  }
+
+
+  
