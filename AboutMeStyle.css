@@ -4,21 +4,16 @@ html, body {
   }
   
   header {
-    color: black;
+    color: white;
     font-size: 50px;
-    background-color: gray;
+    background-color: rgb(162, 194, 200);
     text-align: center;
-  box-sizing: border-box;
-
-    position: relative;
-    left: 0;
-    right: 0;
-    height: 175px; 
+ 
   }
   header nav a
   {
     text-decoration: none;
-    color:black;
+    color: white;
   }
   
   .notCurrentPage
@@ -55,7 +50,7 @@ html, body {
   }
   
   .project h2 {
-    font-size: 24px;
+    font-size: 48px;
     margin: 0;
   }
   
