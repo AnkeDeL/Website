@@ -1,6 +1,18 @@
 html, body {
   font-family: Arial, sans-serif;
   margin: 0;
+  scroll-behavior: smooth; /* Enable smooth scrolling behavior */
+
+}
+
+.section {
+  height:fit-content;
+  background-color: lightblue;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 10px;
+  margin:auto;
+  border-radius: 10%;
 }
 
 header {
@@ -8,21 +20,15 @@ header {
   font-size: 50px;
   background-color: rgb(162, 194, 200);
   text-align: center;
- 
 }
-header nav a
+header nav h1
 {
   text-decoration: none;
   color: white;
+  cursor:pointer;
+  box-sizing:content-box;
 }
 
-.notCurrentPage
-{
-  opacity: 50%;
-}
-.notCurrentPage:hover {
- opacity : 100%;
-}
 nav ul {
   list-style: none;
   margin: 0;
@@ -39,21 +45,32 @@ h1 {
   font-size: 48px;
 }
 
+footer{
+  text-align: center;
+}
 .column {
-    display: flex;
-    justify-content: center; /* horizontally centers the images */
-    align-items: center; /* vertically centers the images */
-    padding-left: 50px;
+    width: 50%;
+    max-width: 50%;
+    min-width: 50%;
   }
   
   .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    display:flex;
+    /*flex-direction: row;*/
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   .image {
     height: 800px;
     width: 1000px;
+    max-width: 70%;
+    min-width: 70%;
+    border-radius: 30px;
+    height: auto;
+  }
+  .smallImage {
+    height: 100px;
+    width: 300px;
     max-width: 100%;
     border-radius: 30px;
     height: auto;
@@ -64,10 +81,17 @@ h1 {
     -webkit-filter: brightness(70%);
     transition: all 1s ease;        /*geleidelijk aan in 1 sec*/
   }
-
-
-  .image-container {
-    margin: 1px;
-    padding: 25px;
+  .content {
+    max-height: 0;
+    overflow: auto;
+    transition: max-height 0.3s ease-out;
   }
 
+  .visible {
+    max-height: 1000px; /* Adjust the max height as needed */
+    transition: max-height 0.3s ease-in;
+  }
+
+  .toggle-button {
+    cursor: pointer;
+  }
